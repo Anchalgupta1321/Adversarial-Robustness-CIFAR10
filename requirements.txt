@@ -1,0 +1,55 @@
+# ===============================
+# Adversarial Robustness on CIFAR-10
+# Author: Anchal Gupta
+# Date: November 2025
+# ===============================
+
+# Core Python
+python==3.10.12
+
+# Deep Learning Frameworks
+torch==2.2.0
+torchvision==0.17.0
+torchaudio==2.2.0
+
+# Numerical & Data Processing
+numpy==1.26.0
+pandas==2.2.0
+scipy==1.12.0
+
+# Visualization & Plotting
+matplotlib==3.8.0
+seaborn==0.13.0
+tqdm==4.66.1
+
+# Model Evaluation & Metrics
+scikit-learn==1.4.0
+Pillow==10.2.0
+
+# Spectral Analysis & Robustness
+weightwatcher==0.7.6
+numexpr==2.9.0
+h5py==3.10.0
+
+# Animation / Visualization (optional)
+manim==0.18.1
+
+# Notebook Support
+jupyter==1.0.0
+notebook==7.1.0
+ipykernel==6.29.0
+
+# Logging & Utilities
+tensorboard==2.16.0
+requests==2.31.0
+
+# Image & Video Utilities
+opencv-python==4.9.0
+ffmpeg-python==0.2.0
+
+# Optional: GPU/Acceleration
+# (Uncomment if using CUDA)
+# torch==2.2.0+cu121
+# torchvision==0.17.0+cu121
+# torchaudio==2.2.0+cu121
+# --extra-index-url https://download.pytorch.org/whl/cu121
