@@ -65,9 +65,9 @@ It consists of two complementary studies:
 ## 🧮 Part 1- Adversarial Attack – Random Noise Injection  
 
 **Noise Generation:**
-'''python'''
-noise_image = torch.rand(1, 3, 32, 32)
-noise_image = (noise_image.squeeze(0).permute(1, 2, 0).numpy() * 255).astype(np.uint8)
+ '''python'''
+ noise_image = torch.rand(1, 3, 32, 32)
+ noise_image = (noise_image.squeeze(0).permute(1, 2, 0).numpy() * 255).astype(np.uint8)
 
 **Success Criterion:**
 Model confidence ≥ 90% on a random noise input.
@@ -159,7 +159,6 @@ Layer-wise SN optimization or hybrid normalization.
 Early stopping based on spectral cues.
 
 ### 📂 Repository Structure
-'''objectivec'''
    Adversarial-Robustness-CIFAR10/
    │
    ├── Notebooks/
