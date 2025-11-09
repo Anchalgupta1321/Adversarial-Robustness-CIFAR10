@@ -88,25 +88,27 @@ Applied to all convolutional layers:
 self.conv1 = nn.utils.spectral_norm(nn.Conv2d(3, 64, 3, padding=1))
 
 **Results after Spectral Normalization (SN):**
-- **Metric                                   Value**
-Total Attempts (T)	                        10,000
-Successful Adversarial Examples (N)	         165
-Success Rate                              	1.65%
+| Metric | Value |
+|------------|-------------|
+|Total Attempts (T) | 10,000 |
+|Successful Adversarial Examples (N) | 165 |
+|Success Rate | 1.65% |
 
     ✅ SN reduced adversarial vulnerability by ~76%.
     Vulnerability persisted mainly for “deer” and “frog” classes.
 
 ### 📊 Results Summary
-**Model	      Train Acc  	Val Acc	  Test Acc	 Adversarial Success Rate
-CNN	         96.53%	   88.66%     88.34%	    7.03%
-Spectral CNN	93.86%	   88.07%     87.96%	    1.65%
+| Model | Train Acc | Val Acc| Test Acc | Adversarail Success Rate |
+|------------|-------------|------------|---------------|---------------|
+| CNN | 96.53% | 88.66% | 88.34%	| 7.03% |
+| Spectral CNN | 93.86% | 88.07% | 87.96%	| 1.65% |
 
 ### Visualizations
-📈 Training & Validation Curves
-🧩 Confusion Matrices (CNN vs SN)
-💥 Adversarial Examples & Class Distribution
-🌀 Gradient Visualizations of Perturbations
-📊 Spectral Norm Layerwise Plot
+**📈 Training & Validation Curves**
+**🧩 Confusion Matrices (CNN vs SN)**
+**💥 Adversarial Examples & Class Distribution**
+**🌀 Gradient Visualizations of Perturbations**
+**📊 Spectral Norm Layerwise Plot**
 
 ## 🧩 Part 2 – Weight & Bias Evolution + Empirical Spectral Density (ESD)
 
@@ -129,10 +131,11 @@ Revealed learning phases:
    Late: skewed distributions (overfitting)
 
 **⚡ Empirical Spectral Density (ESD)**
-Analyzed via WeightWatcher:
-Layer	      α (Power-law Exponent) 	Interpretation
-Conv1	      4.71	                  Sharp decay → strong regularization, stable
-FC Layer 31 2.74	                  Heavy-tailed → mild overfitting or memorization
+Analyzed via WeightWatcher:'
+| Layer	 | α (Power-law Exponent) | Interpretation
+|------------|-------------|---------------|
+| Conv1 |  4.71 | Sharp decay → strong regularization, stable |
+| FC Layer 31 | 2.74	| Heavy-tailed → mild overfitting or memorization |
   Low α (~2–3) → heavy-tailed, overfitting
   High α (~4–5) → well-regularized, smooth generalization
 
