@@ -73,10 +73,11 @@ noise_image = (noise_image.squeeze(0).permute(1, 2, 0).numpy() * 255).astype(np.
 Model confidence ≥ 90% on a random noise input.
 
 **Baseline CNN Results:**
-- **Metric	                                  Value**
-Total Attempts (T)	                         10,000
-Successful Adversarial Examples (N)	          703
-Success Rate	                               7.03%
+| Metric | Value |
+|------------|-------------|
+|Total Attempts (T)| 10,000|
+|Successful Adversarial Examples (N)| 703|
+|Success Rate | 7.03% |
 
 **Most Common Misclassified Classes:**
 🐸 Frog (49.8%), 🐱 Cat (44.2%), 🚢 Ship (6.5%)
