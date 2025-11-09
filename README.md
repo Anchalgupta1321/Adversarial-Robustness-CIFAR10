@@ -136,6 +136,7 @@ Analyzed via WeightWatcher:'
 |------------|-------------|---------------|
 | Conv1 |  4.71 | Sharp decay → strong regularization, stable |
 | FC Layer 31 | 2.74	| Heavy-tailed → mild overfitting or memorization |
+
   Low α (~2–3) → heavy-tailed, overfitting
   High α (~4–5) → well-regularized, smooth generalization
 
@@ -159,30 +160,30 @@ Early stopping based on spectral cues.
 
 ### 📂 Repository Structure
 '''objectivec'''
-Adversarial-Robustness-CIFAR10/
-│
-├── Notebooks/
-│   ├── Part1-CIFAR10.ipynb
-│   ├── Part2-CIFAR10.ipynb
-│
-├── Results/
-│   ├── Part1_loss_accuracy_plot.png
-│   ├── Part1_confusion_matrix.png
-│   ├── Part2_cnn_confusion_matrix.png
-│   ├── Part2_cnn_spectral_confusion_matrix.png
-│   ├── CNN_accuracy.png
-│   ├── CNN_loss.png
-│   ├── CNN_Spectral_loss.png
-│   ├──CNN_Spectral_accuracy.png
-│
-├── Videos/
-│   ├── ESD PLOTS.mp4
-│   ├── global_biases.mp4
-|   ├── global_weights.mp4
-│   ├── Weight_Bias Video.mp4
-│
-├── requirements.txt
-└── README.md
+   Adversarial-Robustness-CIFAR10/
+   │
+   ├── Notebooks/
+   │   ├── Part1-CIFAR10.ipynb
+   │   ├── Part2-CIFAR10.ipynb
+   │
+   ├── Results/
+   │   ├── Part1_loss_accuracy_plot.png
+   │   ├── Part1_confusion_matrix.png
+   │   ├── Part2_cnn_confusion_matrix.png
+   │   ├── Part2_cnn_spectral_confusion_matrix.png
+   │   ├── CNN_accuracy.png
+   │   ├── CNN_loss.png
+   │   ├── CNN_Spectral_loss.png
+   │   ├──CNN_Spectral_accuracy.png
+   │
+   ├── Videos/
+   │   ├── ESD PLOTS.mp4
+   │   ├── global_biases.mp4
+   |   ├── global_weights.mp4
+   │   ├── Weight_Bias Video.mp4
+   │
+   ├── requirements.txt
+   └── README.md
 
 ### ⚙️ Environment Setup
 **1️⃣ Clone Repository**
